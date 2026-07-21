@@ -93,28 +93,6 @@ const Login = () => {
               </Link>
             </p>
           </div>
-
-          {/* Demo credentials */}
-          <div className="mt-6 pt-6 border-t border-surface-700">
-            <p className="text-xs text-surface-500 text-center mb-3">Demo Accounts</p>
-            <div className="grid grid-cols-1 gap-2 text-xs">
-              {[
-                { role: 'Student', email: 'alice@student.com' },
-                { role: 'Tutor', email: 'sarah@tutor.com' },
-                { role: 'Admin', email: 'admin@tutorconnect.com' },
-              ].map((demo) => (
-                <button
-                  key={demo.role}
-                  type="button"
-                  onClick={() => { setEmail(demo.email); setPassword('password123'); }}
-                  className="flex items-center justify-between p-2.5 rounded-lg bg-surface-900 hover:bg-surface-700 border border-surface-700 transition-colors text-left"
-                >
-                  <span className="text-surface-300">{demo.role}</span>
-                  <span className="text-surface-500 font-mono">{demo.email}</span>
-                </button>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>
